@@ -40,10 +40,9 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.2</version>
                 <configuration>
-                    <!-- Specify the test you want to run -->
+                    <!-- Run all *Test.java classes anywhere in test sources -->
                     <includes>
-                        <include>com/MainTest.java</include>
-                        <!-- <include>com/CoverageTest.java</include> -->
+                        <include>**/*Test.java</include>
                     </includes>
                 </configuration>
             </plugin>
