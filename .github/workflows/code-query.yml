@@ -61,8 +61,8 @@ jobs:
       uses: github/codeql-action/init@v3
       with:
         languages: ${{ matrix.language }}
-        queries: ./.github/.codeql/queries/customize/
-        # queries: ./.github/codeql/queries/customize/,security-extended,security-and-quality
+        # queries: ./.github/.codeql/queries/customize/
+        queries: ./.github/codeql/queries/customize/,security-extended,security-and-quality
 
     # Replace autobuild with explicit Maven build in the submodule
     - name: Build Java project (custom)
